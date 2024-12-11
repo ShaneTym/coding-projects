@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #292929; /* Dark background color */
+    color: #8eea0c; /* White text color */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    margin: 0;
+    padding: 0;
+}
+#main {
+    text-align: center;
+    margin: 0;
+}
+
+#title {
+    font-size: 50px;
+    border: 2px solid rgb(131, 120, 120);
+    border-radius: 10px;
+    background-color:  #000000f4;
+    color: rgb(255, 7, 7);
+    position: sticky;
+    top: 0;
+    left: 600px;
+    z-index: 1;
+    width: 100%
+}
+
+#img-div {
+    margin: 0 auto;
+    width: 40%; /* Adjust as needed */
+    overflow: hidden; /* Hide overflowing content */
+    margin-bottom: 30px;
+    background-image: linear-gradient(180deg, #0b0b0bf4, #483232f4);
+    padding: 20px;
+    border-radius: 50px; /* Add some space after image */
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#img-caption {
+    font-style: italic;
+    margin-top: 10px;
+    color:rgb(147, 164, 153);
+    font-weight: bold;
+}
+
+#tribute-info {
+    margin: 100px 150px;
+    font-size: 26px;
+    line-height: 1.6;
+    border: 3.5px solid rgb(131, 120, 120);
+    border-radius: 50px;
+    padding: 10px;
+    background-image: linear-gradient(180deg, #000000f4, #2f1010f4);
+}
+
+#stats {
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid rgb(131, 120, 120);
+    border-radius: 40px;
+    background-image: linear-gradient(180deg, #070606f4, #4b1515f4);
+    padding: 20px;
+}
+
+
+#stats h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgba(252, 252, 252, 0.801);;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+#text-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 150px; 
+    font-size: 1.5rem;
+    gap: 30px;
+    line-height: 1.6;
+    border: 1.5px solid rgb(131, 120, 120);
+    border-radius: 25px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #000000f4, #2f1010f4); /* Add space above text columns */
+}
+
+.column {
+    flex: 1;
+    margin-right: 30px;
+    margin-bottom: 100px;
+     /* Add space between columns */
+}
+
+@media (max-width: 768px) {
+    #text-columns {
+        flex-direction: column;
+    }
+    .column {
+        margin-right: 0; /* Reset margin for single column layout */
+        margin-bottom: 50px; /* Add space between columns in single column layout */
+    }
+}
